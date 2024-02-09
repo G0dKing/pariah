@@ -1,0 +1,295 @@
+@import "fonts.css";
+
+:root {
+    --main-bg-color: black;
+    --main-text-color: white;
+    --hover-text-color: red;
+    --header-height: 100px;
+    
+/* Global Fonts */
+    --body-font: 'Gill Sans';
+    --header-font: 'Zdyk Pisces';
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100%;
+    width: 100%;
+    font-family: var(--body-font), sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0s linear;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--main-bg-color);
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.banner h1 {
+    font-family: var(--header-font);
+    position: relative;
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    font-size: 68px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+
+    text-shadow: 
+    0px 20px 5px rgba(245, 237, 237, 0.144),
+    0px 5px 10px rgba(255, 0, 0, 0),
+    0px -10px 30px rgba(249, 255, 251, 0.747);
+
+    transition: all 0.3s ease;
+}
+.banner h1:hover {
+    color: var(--hover-text-color);
+}
+
+.navigation ul {
+    position: relative;
+    display: flex;    
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;    
+}
+.navigation li {
+    padding: 0 15px;
+   
+    
+}
+.navigation a {
+    font-family: 'Gill Sans';
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--main-text-color);
+    transition: color 0.3s ease;
+    width: 100%;
+   
+}
+.navigation a:hover {
+    color: var(--hover-text-color);
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-grow: 1;   
+    margin-top: 50px;
+    width: 100%;
+}
+
+.bgvid_main {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -2;
+    background-size: cover;
+}
+
+.book-button {    
+    display: flex;
+    width: 100%;        
+    border: none; 
+    align-items: center;
+    justify-content: center;   
+    margin-top: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(240, 248, 255, 0);
+    justify-content: center;
+    
+}
+
+.book-button a {
+    display: inline;
+    color: rgb(255, 12, 12);
+    font-family: 'Roboto';
+    font-size: 4em;    
+    border: 2px solid;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(39, 1, 1);
+    font-family: var(--body-font);
+    font-style:normal;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.705);
+
+    text-shadow: 
+    0px 0px 5px rgb(255, 0, 0), 
+    0px -1px 3px rgb(255, 0, 0),
+    0px 1px 5px rgb(83, 0, 0),
+    0px 0px 10px rgba(255, 0, 0, 0.616),
+    0px 0px 15px rgb(255, 0, 0);
+
+    box-shadow: 0px -2px 5px rgb(255, 0, 0, 1);
+
+    transition: all 0.3s ease;
+}
+
+.book-button a:hover,:focus {
+    color: rgba(255, 255, 255, 0.575);
+    border-color: rgba(255, 0, 0, 0);
+    background-color: rgba(245, 0, 0, 0.425);
+
+    text-shadow:
+     0px 0px 5px rgb(255, 255, 255), 
+     0px -1px 3px rgba(255, 0, 0, 0.788),
+     0px 1px 5px rgb(255, 255, 255),
+     0px 0px 10px rgba(255, 255, 255, 0.616),
+     0px 0px 20px rgba(255, 255, 255, 0.952);
+
+    box-shadow: 0px -2px 15px rgba(255, 0, 0, 0.753);
+}
+
+.hero-container {
+    height:100%;
+    width: 100%;
+    padding: 20px;
+    margin: auto;       
+}
+
+.hero-container h2 {
+    font-family: var(--body-font);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 3vw;
+            
+    text-shadow:
+    0px 0px 5px rgb(0, 174, 243), 
+    0px -5px 3px rgb(0, 0, 0),
+    0px 5px 5px rgba(255, 255, 255, 0.432),
+    0px 0px 10px rgba(255, 0, 0, 0.842),
+    0px 0px 20px rgba(0, 0, 0, 0.952);
+}
+
+.ContentColumn {
+    width: 100%;
+    height: auto;
+    padding: 0;
+   
+}
+
+.footer {
+    position:relative;
+    display:flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.copyright {
+    font-family: var(--body-font);
+    font-size: 1em;
+}
+
+@media (max-width: 1080px) {
+    .hero-container h2 {
+        font-size: 2.4em;
+        margin-top: 10vh;
+        padding: 10px 0;
+    }
+  
+}
+
+@media (max-width: 768px) {
+   
+    body {
+        justify-content: self;
+    }
+    .header {
+        height: 50px;
+    }
+    .banner  {
+        display: flex;
+        margin-left:0;
+        margin-top: 260px;  
+        width: 100%;      
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation ul {
+        position: absolute;       
+        left: 0;
+        margin-top: 2px;
+        width: 100%;
+        padding: 0px 10px;
+        margin: 0px;
+    }
+   .navigation li {
+   
+    margin: 0 0px;
+    height: 50px;
+    min-width: auto;
+   }
+   .navigation a {
+    font-size: 1.1rem;
+    
+    padding: 0;
+   }
+
+   .book-button {      
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border: none;      
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    margin-top: 30vh;
+    padding: 10px 10px;
+    background-color: rgba(240, 248, 255, 0);
+    justify-content: center;
+    align-items: center;
+    }
+    .book-button a {
+        font-size: 4em;
+    }
+
+    .hero-container h2 {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        justify-content: baseline;
+        top: 20vh;
+        font-size: 2.2em;
+        padding: 10px 20px;
+        height: 50px;
+        white-space: nowrap;
+        margin-top: 20%;
+        
+    }
+
+}
