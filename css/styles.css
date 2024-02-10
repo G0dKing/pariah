@@ -63,7 +63,7 @@ header {
 
     transition: all 0.3s ease;
 }
-.banner h1:hover {
+.banner h1:hover, h1:focus {
     color: var(--hover-text-color);
 }
 
@@ -90,7 +90,7 @@ header {
     width: 100%;
    
 }
-.navigation a:hover {
+.navigation a:hover, a:focus {
     color: var(--hover-text-color);
 }
 
@@ -153,7 +153,7 @@ main {
     transition: all 0.3s ease;
 }
 
-.book-button a:hover,:focus {
+.book-button a:hover, .book-button a:focus {
     color: rgba(255, 255, 255, 0.575);
     border-color: rgba(255, 0, 0, 0);
     background-color: rgba(245, 0, 0, 0.425);
@@ -275,7 +275,7 @@ main {
     align-items: center;
     }
     .book-button a {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .hero-container h2 {
@@ -284,12 +284,28 @@ main {
         align-items: baseline;
         justify-content: baseline;
         top: 20vh;
-        font-size: 2.2em;
+        font-size: 1.7em;
         padding: 10px 20px;
         height: 50px;
         white-space: nowrap;
         margin-top: 20%;
         
+    }
+}
+
+@media (max-width: 375px) {
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+    .navigation a {
+        font-size: .78em;
+    }
+    .book-button a {
+        font-size: 1.8em;
+    }
+    .hero-container h2 {
+        font-size: 1.4em;
     }
 
 }
