@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/index.css" />   
-    <title>Pariah - Home</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png" />
+    <title>Pariah - Home</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
 </head>
 <body>
-
     <header>
         <div class="banner">
             <h1>p a r i a h</h1>
@@ -26,20 +24,23 @@
             </ul>
         </div>
     </header>
-    <main>
-        <video autoplay loop muted playsinline class="bgvid_main">
-            <source src="assets/mov/djbg.mp4" type="video/mp4">
+
+    <main>    
+        <video autoplay loop muted playsinline class="bgvid">
+            <source src='assets/mov/bgVid.mp4' type="video/mp4" />
         </video>
-        <div class="hero-container">
-            <h2>TRANSCEND THE ROLE OF <br>MERE OBSERVER</h2>
-            <button class="book-button"><a href="">BOOK NOW</a></button>
-        </div>
+
+        <div id="root"></div>       
+
     </main>
+
     <div class="footer">
         <div class="copyright">
             <p>Copyright &copy; 2024 Alex Pariah</p>
         </div>
     </div>
+    
+    <script src="dist/bundle.js"></script>
 
 </body>
 </html>

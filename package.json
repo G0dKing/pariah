@@ -1,0 +1,38 @@
+{
+  "name": "dj-epk-template",
+  "version": "2.0.2",
+  "description": "Template for responsive DJ EPK Website using HTML5, CSS, and Javascript",
+  "main": "./index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "cypress open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G0dKing/pariah.git"
+  },
+  "author": "Alex Pariah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/G0dKing/pariah/issues"
+  },
+  "homepage": "https://github.com/G0dKing/pariah#readme",
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
